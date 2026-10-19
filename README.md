@@ -89,7 +89,7 @@ Restart the client. The `resolve_agent_brokerage` tool appears.
 
 ## Pricing
 
-Pay per event on Apify, billed to your Apify account. Prices in USD. Proposed launch prices, not yet live.
+Pay per event on Apify, billed to your Apify account. Prices in USD.
 
 | Event | Free plan | Bronze | Silver | Gold |
 |---|---|---|---|---|
@@ -101,7 +101,7 @@ Ambiguous, not found, unsupported state, and capped rows are never charged.
 
 ## Your keys
 
-The actor needs no provider key. It reads MMG's own index of the state license registers through a private service and holds no key of its own.
+The actor needs no provider key. It reads MMG's own index of the state license registers through a Mamba Labs service and holds no key of its own. Each actor run sends its own Apify run token to that service, which reads the run from the Apify API on every request to confirm it is a live run of this actor. The service caches no result and never stores or logs the token.
 
 ## Full actor documentation
 

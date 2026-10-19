@@ -1,7 +1,7 @@
 {
   "manifest_version": "0.3",
   "name": "mcp-agent-brokerage-resolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Agent to Brokerage Resolver. Look up a licensed US real estate agent on the official state register and get the brokerage of record, its active agent count and size band, and license status. 19 states; firm and zip rosters. No emails or phones. Runs on Apify. Clay-ready output.",
   "author": {
     "name": "Mamba Labs"
