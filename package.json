@@ -1,0 +1,51 @@
+{
+  "name": "@mambalabsdev/mcp-agent-brokerage-resolver",
+  "version": "1.0.0",
+  "description": "MCP server for Agent to Brokerage Resolver. Look up a licensed US real estate agent on the official state register and get the brokerage of record, its active agent count and size band, and license status. 19 states; firm and zip rosters. No emails or phones. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-agent-brokerage-resolver": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "real-estate",
+    "realtor",
+    "brokerage",
+    "license-lookup",
+    "real-estate-agents",
+    "apify",
+    "clay",
+    "lead-generation"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/agent-brokerage-resolver",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-agent-brokerage-resolver"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-agent-brokerage-resolver"
+}

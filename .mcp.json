@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-agent-brokerage-resolver": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-agent-brokerage-resolver"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
